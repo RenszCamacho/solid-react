@@ -1,0 +1,1 @@
+export { SingleResponsability } from './SingleResponsability'
