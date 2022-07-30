@@ -1,31 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useData } from './hooks/useData'
 
-import axios from 'axios'
-
-interface TodoType {
-    id: number;
-    userId: number;
-    title: string;
-    completed: boolean;
-}
+/**
+ * Just one responsability: A component to show the data
+ */
 
 export const SingleResponsability = () => {
-  const [data, setData] = useState<TodoType[]>([])
-  const [isFetching, setIsFetching] = useState(true)
-
-  useEffect(() => {
-    axios
-      .get<TodoType[]>('https://jsonplaceholder.typicode.com/todos')
-      .then((res) => {
-        setData(res.data)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-      .finally(() => {
-        setIsFetching(false)
-      })
-  }, [])
+  const { data, isFetching } = useData()
 
   if (isFetching) {
     return <div>Loading...</div>
