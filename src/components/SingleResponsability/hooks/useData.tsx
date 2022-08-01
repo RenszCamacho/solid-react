@@ -13,8 +13,7 @@ export const useData = () => {
 
   useEffect(() => {
     fetchData()
-      .then(setData)
-      .catch(console.error)
+      .then((data) => setData(data!))
       .finally(() => setIsFetching(false))
   }, [])
 
