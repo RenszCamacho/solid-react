@@ -1,2 +1,2 @@
 export { SingleResponsability } from './SingleResponsability'
-export { OpenClosePrinciple } from './OpenClose'
+export { Title, TitleWithButton, TitleWithLink } from './OpenClose'
