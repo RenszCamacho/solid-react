@@ -1,10 +1,22 @@
 // import { SingleResponsability } from './components'
 
-import { OpenClosePrinciple } from './components'
+import { TitleWithButton, TitleWithLink } from './components'
 
 const App = () => {
   return (
-    <OpenClosePrinciple title='Titulo' type='withNormalButton' buttonText='Aloha' href='/' />
+    <>
+      <TitleWithLink
+        title='Title with Link'
+        buttonText='Click me'
+        href='https://www.google.com'
+      />
+
+      <TitleWithButton
+        title='Title with Button'
+        buttonText='Click me'
+        onClick={() => console.log('Clicked')}
+      />
+    </>
   )
 }
 
