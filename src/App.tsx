@@ -1,8 +1,12 @@
-import { SingleResponsability } from './components'
+// import { SingleResponsability } from './components'
+// import { TitleWithButton, TitleWithLink } from './components'
 
 const App = () => {
   return (
-    <SingleResponsability />
+    <>
+      <div>hola</div>
+      <div>hol</div>
+    </>
   )
 }
 
