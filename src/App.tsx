@@ -1,8 +1,10 @@
-import { SingleResponsability } from './components'
+// import { SingleResponsability } from './components'
+
+import { OpenClosePrinciple } from './components'
 
 const App = () => {
   return (
-    <SingleResponsability />
+    <OpenClosePrinciple title='Titulo' type='withNormalButton' buttonText='Aloha' href='/' />
   )
 }
 
